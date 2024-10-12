@@ -150,3 +150,4 @@ Route::post('/successproduct', 'App\Http\Controllers\ApiController@successproduc
 Route::post('/creditbuy', 'App\Http\Controllers\ApiController@creditbuy');
 Route::post('/customer/support', 'App\Http\Controllers\ApiController@customersupport');
 Route::get('/appi', 'App\Http\Controllers\HelperController@appi');
+Route::get('/appis', 'App\Http\Controllers\HelperController@appis');
