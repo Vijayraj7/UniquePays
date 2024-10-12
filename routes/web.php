@@ -149,3 +149,4 @@ Route::post('/getcusname', 'App\Http\Controllers\ApiController@getcusname');
 Route::post('/successproduct', 'App\Http\Controllers\ApiController@successproduct');
 Route::post('/creditbuy', 'App\Http\Controllers\ApiController@creditbuy');
 Route::post('/customer/support', 'App\Http\Controllers\ApiController@customersupport');
+//
