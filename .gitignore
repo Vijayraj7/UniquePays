@@ -1,0 +1,4 @@
+.env
+/public/__MACOSX
+/public/uploads
+/.vscode
