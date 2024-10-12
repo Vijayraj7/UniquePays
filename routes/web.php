@@ -149,4 +149,8 @@ Route::post('/getcusname', 'App\Http\Controllers\ApiController@getcusname');
 Route::post('/successproduct', 'App\Http\Controllers\ApiController@successproduct');
 Route::post('/creditbuy', 'App\Http\Controllers\ApiController@creditbuy');
 Route::post('/customer/support', 'App\Http\Controllers\ApiController@customersupport');
+<<<<<<< HEAD
+=======
+Route::get('/appi', 'App\Http\Controllers\HelperController@appi');
+>>>>>>> d921163badd18ca71dcc534ad62fe1aec9632dff
 Route::get('/appis', 'App\Http\Controllers\HelperController@appis');
