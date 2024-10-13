@@ -123,7 +123,7 @@ if (isset($_GET['prfid'])) {
                     </li>
                   </ul>
                   <div class="card mb-4">
-                    <h5 class="card-header" style="background-color: #f9a826ff; margin-bottom:10px; text-transform: uppercase;font-size: 20px; color: #fff;">My Profile</h5>
+                    <h5 class="card-header" style="background-color: #3b3bf9; margin-bottom:10px; text-transform: uppercase;font-size: 20px; color: #fff;">My Profile</h5>
                     <!-- Account -->
                     <div class="card-body">
                       <div class="d-flex align-items-start align-items-sm-center gap-4">

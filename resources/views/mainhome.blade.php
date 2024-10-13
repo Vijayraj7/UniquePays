@@ -801,14 +801,14 @@ if(isset($_GET['page'])){
         >
         <style id="bitrader-custom-inline-css" type="text/css">
         html:root {
-            /* --brand-color: #f9a826ff */
+            /* --brand-color: #3b3bf9 */
             --brand-color: #00D094
         }
 
         html:root {
-            --secondary-color: #f9a826ff
+            --secondary-color: #3b3bf9
         }
-        /* color: #f9a826ff; */
+        /* color: #3b3bf9; */
         </style>
         <link
             rel="stylesheet"
@@ -1113,8 +1113,8 @@ if(isset($_GET['page'])){
         }
 
             .member-login-btn{
-                /* background-color: #f9a826ff !important;
-                border-color: #f9a826ff !important; */
+                /* background-color: #3b3bf9 !important;
+                border-color: #3b3bf9 !important; */
                 box-shadow: 0px 4px 20px 4px #00D094;
                 animation: blnking 2s ease-in-out infinite;
                 /* color: white !important; */
@@ -1144,8 +1144,8 @@ if(isset($_GET['page'])){
                 border-color: #00D094 !important;
             }
             .get-started-btn{
-                background-color: #f9a826ff !important;
-                border-color: #f9a826ff !important;
+                background-color: #3b3bf9 !important;
+                border-color: #3b3bf9 !important;
             }
             .get-started-btn:hover{
                 /* background-color: #00D094 !important; */
@@ -1155,24 +1155,24 @@ if(isset($_GET['page'])){
                 background-color: #00D094 !important;
                color: #fff !important;
                border-color: transparent !important;
-                /* border-color: #f9a826ff !important;
-                color: #f9a826ff !important;
-                border-color: #f9a826ff !important; */
+                /* border-color: #3b3bf9 !important;
+                color: #3b3bf9 !important;
+                border-color: #3b3bf9 !important; */
             }
             .watch-video-btn:hover{
                 background-color: #00D094 !important;
                color: #fff !important;
             }
             .watch-svg svg g path{
-                /* fill: #f9a826ff; */
+                /* fill: #3b3bf9; */
                 stroke: #fff !important;
             }
             .watch-svg svg rect{
-                /* fill: #f9a826ff;S */
+                /* fill: #3b3bf9;S */
                 stroke: #fff !important;
             }
             .banner-title span{
-                color: #f9a826ff !important;
+                color: #3b3bf9 !important;
             }
             .sectioncards{
                 background-color: #1c2e2a9c !important;
@@ -1634,7 +1634,7 @@ if(isset($_GET['page'])){
                                        href="/?page=aboutus"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -2653,7 +2653,7 @@ if(isset($_GET['page'])){
                                        href="/dark/about-us/"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -2871,7 +2871,7 @@ if(isset($_GET['page'])){
                                        href="/?page=ourproject"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         View All
@@ -3014,7 +3014,7 @@ if(isset($_GET['page'])){
                                        href="/dark/about-us/"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -3183,7 +3183,7 @@ if(isset($_GET['page'])){
                                        href="/dark/about-us/"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -3349,7 +3349,7 @@ if(isset($_GET['page'])){
                                        href="/?page=web3"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -3570,7 +3570,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                        href="/dark/about-us/"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -3789,7 +3789,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                        href="/dark/about-us/"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -4004,7 +4004,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                        href="/dark/about-us/"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -4157,7 +4157,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                        href="/dark/about-us/"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -4220,7 +4220,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                        href="/dark/about-us/"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -4373,7 +4373,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                        href="/dark/about-us/"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More
@@ -4455,7 +4455,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                        href="/?page=incomeplan"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         View All
@@ -4571,7 +4571,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                        href="/?page=ourproject"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         View All
@@ -4727,7 +4727,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                    href="/?page=ourproject"
                                     target="_self"
                                     rel="nofollow"
-                                    style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                                    style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                     class="trk-btn trk-btn--border trk-btn--primary"
                                 >
                                     View All
@@ -4778,15 +4778,15 @@ Effective sales training should be viewed as a change management initiative. Itâ
                             <p class="elementor-heading-title elementor-size-default about-p">
                             <br>
                             <br>
-                            1. <span>Staker - </span><span style="color: #f9a826ff !important;">Minimum 100 USDT</span>
+                            1. <span>Staker - </span><span style="color: #3b3bf9 !important;">Minimum 100 USDT</span>
                             <br>
-                            2. <span>Promoter - </span><span style="color: #f9a826ff !important;">Minimum 10 Direct Stakers</span>
+                            2. <span>Promoter - </span><span style="color: #3b3bf9 !important;">Minimum 10 Direct Stakers</span>
                             <br>
-                            3. <span>Executive Promoter - </span><span style="color: #f9a826ff !important;">Direct 2 Promoters</span>
+                            3. <span>Executive Promoter - </span><span style="color: #3b3bf9 !important;">Direct 2 Promoters</span>
                             <br>
-                            4. <span>Manager - </span><span style="color: #f9a826ff !important;">Direct 2 Executive Promoters</span>
+                            4. <span>Manager - </span><span style="color: #3b3bf9 !important;">Direct 2 Executive Promoters</span>
                             <br>
-                            5. <span>Diamond Achievers - </span><span style="color: #f9a826ff !important;">Direct 2 Managers</span>
+                            5. <span>Diamond Achievers - </span><span style="color: #3b3bf9 !important;">Direct 2 Managers</span>
                             <br>
                             </p>
                         </div>
@@ -4802,7 +4802,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                href="/?page=ourproject"
                                 target="_self"
                                 rel="nofollow"
-                                style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                                style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                 class="trk-btn trk-btn--border trk-btn--primary"
                             >
                                 View All
@@ -4909,21 +4909,21 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                 5. <span>Fifth Level - 5%</span>
                                 <br>
 
-                                <span style="color: #f9a826ff !important;">For Executive Promoters (Direct 2 Promoters)</span>
+                                <span style="color: #3b3bf9 !important;">For Executive Promoters (Direct 2 Promoters)</span>
                                 <br>
                                 6. <span>Sixth Level - 5%</span>
                                 <br>
                                 7. <span>Seventh Level - 5%</span>
                                 <br>
 
-                                <span style="color: #f9a826ff !important;">For Managers (Direct 2 Executive Promoters)</span>
+                                <span style="color: #3b3bf9 !important;">For Managers (Direct 2 Executive Promoters)</span>
                                 <br>
                                 8. <span>Eighth Level - 5%</span>
                                 <br>
                                 9. <span>Ninth Level - 5%</span>
                                 <br>
 
-                                <span style="color: #f9a826ff !important;">For Diamond Achievers (Direct 2 Managers)</span>
+                                <span style="color: #3b3bf9 !important;">For Diamond Achievers (Direct 2 Managers)</span>
                                 <br>
                                 10. <span>Tenth Level - 5%</span>
                                 <br>
@@ -4944,7 +4944,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                    href="/?page=ourproject"
                                     target="_self"
                                     rel="nofollow"
-                                    style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                                    style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                     class="trk-btn trk-btn--border trk-btn--primary"
                                 >
                                     View All
@@ -5100,7 +5100,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                    href="/?page=ourproject"
                                     target="_self"
                                     rel="nofollow"
-                                    style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                                    style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                     class="trk-btn trk-btn--border trk-btn--primary"
                                 >
                                     View All
@@ -5174,7 +5174,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                                href="/?page=reward"
                                 target="_self"
                                 rel="nofollow"
-                                style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                                style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                 class="trk-btn trk-btn--border trk-btn--primary"
                             >
                                 View All
@@ -5297,7 +5297,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                               href="/?page=ourproject"
                                target="_self"
                                rel="nofollow"
-                               style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                               style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                class="trk-btn trk-btn--border trk-btn--primary"
                            >
                                View All
@@ -5458,7 +5458,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                               href="/?page=ourproject"
                                target="_self"
                                rel="nofollow"
-                               style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                               style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                class="trk-btn trk-btn--border trk-btn--primary"
                            >
                                View All
@@ -5528,7 +5528,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                               href="/?page=ourproject"
                                target="_self"
                                rel="nofollow"
-                               style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                               style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                class="trk-btn trk-btn--border trk-btn--primary"
                            >
                                View All
@@ -5734,7 +5734,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                               href="/?page=ourproject"
                                target="_self"
                                rel="nofollow"
-                               style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                               style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                class="trk-btn trk-btn--border trk-btn--primary"
                            >
                                View All
@@ -5806,7 +5806,7 @@ Effective sales training should be viewed as a change management initiative. Itâ
                               href="/?page=ourproject"
                                target="_self"
                                rel="nofollow"
-                               style="background-color: #f9a826ff; border-color: #f9a826ff;"
+                               style="background-color: #3b3bf9; border-color: #3b3bf9;"
                                class="trk-btn trk-btn--border trk-btn--primary"
                            >
                                View All
@@ -5975,7 +5975,7 @@ font-weight: 700 !important;
                                        href="/dark/about-us/"
                                         target="_self"
                                         rel="nofollow"
-                                        style="background-color: #f9a826ff;"
+                                        style="background-color: #3b3bf9;"
                                         class="trk-btn trk-btn--border trk-btn--primary"
                                     >
                                         More

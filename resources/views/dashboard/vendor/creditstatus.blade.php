@@ -103,7 +103,7 @@ ini_set('display_errors', 1);
                             <!-- Basic Bootstrap Table -->
                             <style>
                                 .card-header{
-                                    background-color: #f9a826ff;
+                                    background-color: #3b3bf9;
                                     color: #fff;
                                 }
                                 table thead tr th{

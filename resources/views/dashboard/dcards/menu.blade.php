@@ -16,7 +16,7 @@
     color: white !important;
 }
 .bg-menu-theme .menu-inner>.menu-item.active:before {
-    background: #f9a826ff !important;
+    background: #3b3bf9 !important;
 }
 @media (max-width:800px) {
     .menu-avatar{

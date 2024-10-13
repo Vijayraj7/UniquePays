@@ -54,12 +54,12 @@
         <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
         <script src="../assets/js/config.js"></script>
     </head>
-    <body style="background-color: #00150f !important;">
+    <body style="background-color: #a2a2a2 !important;">
         <!-- Content -->
         <div class="container-xxl" style="display: flex; justify-content: space-around; align-items: center;">
-            <div class="imag" style="background-image: url('https://infinqx.ai/assets/images/login/wave.png');">
+            <!-- <div class="imag" style="background-image: url('https://infinqx.ai/assets/images/login/wave.png');">
                 <img src="https://infinqx.ai/assets/images/login/login.svg" style="height: 600px;" alt="">
-            </div>
+            </div> -->
             <div class="authentication-wrapper authentication-basic container-p-y">
                 <div class="authentication-inner">
                     <!-- Register -->
@@ -77,11 +77,10 @@
                                 </a>
                             </div>
                             <!-- /Logo -->
-                            <h4 class="mb-2">Welcome to GMS!</h4>
+                            <h4 class="mb-2">Login to UniquePay</h4>
                             <p class="mb-4">
-                                Please sign-in to your account and
-                                make the profit.
-                            </p>
+                                <!-- Please sign-in to your account and
+                                make the profit. --></p>
                             <form
                                 id="loginAuthenticationx"
                                 class="mb-3"
@@ -91,8 +90,7 @@
                                 @csrf
                                 <div class="mb-3">
                                     <label for="email" class="form-label">
-                                        Email
-                                        or Username
+                                        Your Email
                                     </label>
                                     <input
                                         type="text"
@@ -100,7 +98,7 @@
                                         id="email"
                                         name="email"
                                         value="{{ old('email') }}"
-                                        placeholder="Enter your email or username"
+                                        placeholder="Email"
                                         autofocus
                                     >
                                 </div>
@@ -148,14 +146,14 @@
                                 <div class="mb-3">
                                     <button
                                         onclick="return confirmLogin()"
-                                        style="background-color: #f9a826 !important; border-color: #f9a826 !important;"
+                                        style="background-color: #3b3bf9 !important; border-color: #3b3bf9 !important;"
                                         class="btn btn-primary d-grid w-100"
                                         type="submit"
                                     >Sign in</button>
                                 </div>
                             </form>
                             <p class="text-center">
-                                <span>New on our platform?</span>
+                                <span>Dont have an account?</span>
                                 <a href="/register">
                                     <span>Create an account</span>
                                 </a>
@@ -450,6 +448,51 @@ body{
 
 .refreshIcon:hover {
     color: #fff;
+}
+
+.authentication-wrapper.authentication-basic .authentication-inner:before {
+    display: none !important;
+}
+.light-style .authentication-wrapper.authentication-basic .authentication-inner:after {
+    display: none;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:"arial",heletica,sans-serif;
+	font-size:12px;
+    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 10s linear 0s normal none infinite animate;
+ 
+}
+ 
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
 }
         </style>
         <script>

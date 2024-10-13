@@ -5,8 +5,8 @@
     <div class="row">
         <style>
             .lotbox .card {
-                border-left: 1px solid #f9a826ff;
-                /* border: 0.1px solid #f9a826ff; */
+                border-left: 1px solid #3b3bf9;
+                /* border: 0.1px solid #3b3bf9; */
                 background-color: #0c2820 !important;
             }
 
@@ -27,21 +27,21 @@
             }
 
             .deposit-btn {
-                /* background-color: #f9a826ff !important; */
-                /* border-color: #f9a826ff !important; */
-                background-image: linear-gradient(to right, #f9a826ff, #00D094);
+                /* background-color: #3b3bf9 !important; */
+                /* border-color: #3b3bf9 !important; */
+                background-image: linear-gradient(to right, #3b3bf9, #00D094);
                 border-color: transparent !important;
                 color: #fff;
                 width: 100%;
             }
 
             .deposit-btn:hover {
-                background-color: #f9a826ff !important;
+                background-color: #3b3bf9 !important;
                 border-color: transparent !important;
             }
 
             .lot_title {
-                background-image: linear-gradient(to right, #f9a826ff, #00D094);
+                background-image: linear-gradient(to right, #3b3bf9, #00D094);
                 border-color: transparent !important;
                 color: #fff !important;
                 display: flex;
@@ -486,7 +486,7 @@ background-color: var(--brand-color);
     <div style="margin-bottom: 40px !important;" class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content" style="margin-top:50px;">
 
-            <div style="height: 70px; display:flex; align-items:center; padding-left:25px; background-color: #f9a826ff; border-radius:7px 7px 0px 0px;"
+            <div style="height: 70px; display:flex; align-items:center; padding-left:25px; background-color: #3b3bf9; border-radius:7px 7px 0px 0px;"
                 id="modal_header" class="modal-header">
                 <h5 class="modal-title" style="color: #fff; text-transform: uppercase;"
                     style="text-transform:uppercase;" id="seilver_title_text">Silver Package</h5>
@@ -680,7 +680,7 @@ value="500"> -->
 <div class="modal fade" style="z-index: 2000 !important;" id="lottUserModal" tabindex="-1" aria-hidden="true">
 <div style="margin-bottom: 40px !important;" class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content" style="margin-top:50px;">
-        <div style="height: 70px; display:flex; align-items:center; padding-left:25px; background-color: #f9a826ff; border-radius:7px 7px 0px 0px;"
+        <div style="height: 70px; display:flex; align-items:center; padding-left:25px; background-color: #3b3bf9; border-radius:7px 7px 0px 0px;"
             id="modal_header" class="modal-header">
             <h5 class="modal-title" style="color: #fff; text-transform: uppercase;"
                 style="text-transform:uppercase;" id="seilver_title_text">User Detail</h5>

@@ -59,12 +59,12 @@ if(count($plans) == 0){
     <body>
         <style>
             html:root {
-                /* --brand-color: #f9a826ff */
+                /* --brand-color: #3b3bf9 */
                 --brand-color: #00D094
             }
     
             html:root {
-                --secondary-color: #f9a826ff
+                --secondary-color: #3b3bf9
             }
         </style>
 @if(!isTest())
@@ -207,8 +207,8 @@ if(count($plans) == 0){
                                     <div class="row">
                                         <style>
                                            .col-lg-4 .card{
-                                            border-left: 1px solid #f9a826ff;
-                                            /* border: 0.1px solid #f9a826ff; */
+                                            border-left: 1px solid #3b3bf9;
+                                            /* border: 0.1px solid #3b3bf9; */
                                                 background-color: #0c2820 !important;
                                             }
                                             .fw-semibold{
@@ -222,7 +222,7 @@ if(count($plans) == 0){
                                                 color: #ececec !important;
                                             }
                                             .card-title{
-                                                color: #f9a826ff !important;
+                                                color: #3b3bf9 !important;
                                             }
                                             .card-title strong{
                                                 color: #fff !important;
@@ -474,7 +474,7 @@ Share Referral
                                                 font-size: 15px !important;
                                             }
                                             .withdrawn-title strong{
-                                                color: #f9a826ff;
+                                                color: #3b3bf9;
                                                 font-weight: 700px;
                                             }
                                             .numberx {
@@ -1033,15 +1033,15 @@ $totalAmoun = getTotalAmountForLevel($referralId);
                                     font-size: 12px;
                                 }
                                 .deposit-btn{
-                                    /* background-color: #f9a826ff !important; */
-                                    /* border-color: #f9a826ff !important; */
-                                    background-image: linear-gradient(to right, #f9a826ff, #00D094);
+                                    /* background-color: #3b3bf9 !important; */
+                                    /* border-color: #3b3bf9 !important; */
+                                    background-image: linear-gradient(to right, #3b3bf9, #00D094);
                                     border-color: transparent !important;
                                     color: #fff;
                                     width: 100%;
                                 }
                                 .deposit-btn:hover{
-                                    background-color: #f9a826ff !important;
+                                    background-color: #3b3bf9 !important;
                                     border-color: transparent !important;
                                 }
                                </style>
@@ -1171,7 +1171,7 @@ $totalAmoun = getTotalAmountForLevel($referralId);
                                         var selmodal = document.getElementById('modalselct_trade');
                                         var seilver_title_text =  document.getElementById('seilver_title_text');
                                         var modal_header = document.getElementById('modal_header');
-                                        modal_header.style.backgroundColor = '#f9a826ff';
+                                        modal_header.style.backgroundColor = '#3b3bf9';
                                         seilver_title_text.innerText = 'Gold Package';
                                         // seilver_title_text.style.color = clr == "#e2e2e2" ? "#000": "#fff";
                                         // '','','','#'
@@ -1237,7 +1237,7 @@ $totalAmoun = getTotalAmountForLevel($referralId);
                             <div style="margin-bottom: 40px !important;" class="modal-dialog modal-dialog-centered" role="document">
                               <div class="modal-content" style="margin-top:50px;">
                                 
-                                <div style="height: 70px; display:flex; align-items:center; padding-left:25px; background-color: #f9a826ff; border-radius:7px 7px 0px 0px;" id="modal_header" class="modal-header">
+                                <div style="height: 70px; display:flex; align-items:center; padding-left:25px; background-color: #3b3bf9; border-radius:7px 7px 0px 0px;" id="modal_header" class="modal-header">
                                     <h5 class="modal-title" style="color: #fff; text-transform: uppercase;" style="text-transform:uppercase;" id="seilver_title_text">Silver Package</h5>
                                     <button
                                     type="button"

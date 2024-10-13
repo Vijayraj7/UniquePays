@@ -1,45 +1,46 @@
-
 <!-- Processing Modal -->
-<div id="proccess_tic" class="modal fade" role="dialog" >
-
+<div id="proccess_tic" class="modal fade" role="dialog">
     <div style="
     width: 100%;
     height: 100%;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;">
-
         <div class="modal-dialog">
-  <!-- Modal content-->
-  <div class="modal-content" style="
+            <!-- Modal content-->
+            <div class="modal-content" style="
   padding: 10px;">
-    <div class="page-body">
-  <div class="head" style="display: flex; justify-content: center;">
-    <h3 style="margin-top:15px; color: #000;">Processing..</h3>
-  </div>
- 
-  <div style="display: flex; justify-content: center;">
-    <lottie-player src="https://lottie.host/73aaa890-ed4b-4cf8-9627-a4b292db1b12/xUDE2StHBv.json" background="transparent" speed="1" style="width: 200px; height: 200px" direction="1" mode="normal" loop autoplay></lottie-player>
+                <div class="page-body">
+                    <div class="head" style="display: flex; justify-content: center;">
+                        <h3 style="margin-top:15px; color: #000;">Processing..</h3>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <lottie-player
+                            src="https://lottie.host/73aaa890-ed4b-4cf8-9627-a4b292db1b12/xUDE2StHBv.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 200px; height: 200px"
+                            direction="1"
+                            mode="normal"
+                            loop
+                            autoplay
+                        ></lottie-player>
+                    </div>
+                    <div class="check_status_btn">
+                        <!-- <a class="btn btn-primary" href="/dashboard/status/deposit">Check Status</a> --></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="check_status_btn">
-    <!-- <a class="btn btn-primary" href="/dashboard/status/deposit">Check Status</a> -->
-</div>
-
-</div>
-</div>
-</div>
-  </div>
-
-</div>
-
 <style>
     html:root {
-        /* --brand-color: #f9a826ff */
+        /* --brand-color: #3b3bf9 */
         --brand-color: #00D094
     }
 
     html:root {
-        --secondary-color: #f9a826ff
+        --secondary-color: #3b3bf9
     }
 </style>
 <footer class="content-footer footer bg-footer-theme">
@@ -69,7 +70,7 @@
 }
 
 .card-header{
-        background-color: #f9a826ff !important;
+        background-color: #3b3bf9 !important;
         color: #fff !important;
     }
 .card-header h5{

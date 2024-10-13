@@ -64,12 +64,12 @@ if (count($plans) == 0) {
     <body>
         <style>
             html:root {
-                /* --brand-color: #f9a826ff */
+                /* --brand-color: #3b3bf9 */
                 --brand-color: #00D094
             }
     
             html:root {
-                --secondary-color: #f9a826ff
+                --secondary-color: #3b3bf9
             }
         </style>
 
@@ -146,7 +146,7 @@ if (count($plans) == 0) {
                                                 color: #ececec !important;
                                             }
                                             .card-title{
-                                                color: #f9a826ff !important;
+                                                color: #3b3bf9 !important;
                                             }
                                             .card-title strong{
                                                 color: #fff !important;
@@ -260,7 +260,7 @@ if (count($plans) == 0) {
                                                 font-size: 15px !important;
                                             }
                                             .withdrawn-title strong{
-                                                color: #f9a826ff;
+                                                color: #3b3bf9;
                                                 font-weight: 700px;
                                             }
                                             .numberx {

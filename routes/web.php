@@ -31,7 +31,7 @@ Route::get('/login', function () {
     if (isset($_SESSION['mail']) && Auth::check()) {
         return redirect('/dashboard');
     }
-    return view('auth.login.loginn', ['cn' => 'Customer']);
+    return view('auth.login.login', ['cn' => 'Customer']);
 });
 // Route::get('/login/customer', function () {
 //     return view('auth.login.login', ['cn' => 'Vendor']);
