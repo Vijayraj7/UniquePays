@@ -22,7 +22,8 @@ Route::get('/register/sent', function () {
     return view('auth.register.registersucc', ['cn' => 'Vendor']);
 });
 Route::get('/', function () {
-    return view('mainhome', ['cn' => 'Customer']);
+    // return view('mainhome', ['cn' => 'Customer']);
+    return redirect('/login');
 });
 Route::get('/login', function () {
     if (session_status() !== PHP_SESSION_ACTIVE) {
@@ -39,7 +40,7 @@ Route::get('/login', function () {
 // Route::get('/login/customer', function () {
 //     return view('auth.login.login', ['cn' => 'Customer']);
 // });
-Route::get('/register', function () {
+Route::get('/regite', function () {
     return view('auth.register.register', ['cn' => 'Customer']);
 });
 Route::get('/login/sendpass', function () {

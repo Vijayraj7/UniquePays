@@ -74,7 +74,7 @@
     @endif
     <style>
         .wallet-card {
-            background: #0c2820 !important;
+            background: #000 !important;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -88,7 +88,7 @@
         }
 
         .wallet-card p {
-            font-size: 1.2em;
+            font-size: 1em;
             margin-bottom: 10px;
             color: #fff;
         }
@@ -142,13 +142,14 @@
         @if (isset($snd))
             <div class="wallet-container">
                 <div class="row justify-content-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="width: 100%;">
                         <div class="wallet-card">
-                            <div class="wallet_flexxer">
+                            <div class="wallet_flexxer" style="display: flex; justify-content: space-around; align-items: center;">
+                            <div>
                                 @if (isset($adminwlt))
                                     <h3>Admin Wallet</h3>
                                 @else
-                                    <h3>My Wallet</h3>
+                                    <h3 style="display: none;">Balance</h3>
                                 @endif
                                 <div class="blnc-container">
                                     <div>
@@ -166,27 +167,28 @@
                                         </p>
                                     </div>
                                 </div>
+                            </div>
                                 <div style="height: 10px;"></div>
                                 @if ($snd)
-                                    <button class="btn btn-primary" onclick="onWalletSend()">
+                                    <button class="btn btn-success" onclick="onWalletSend()">
                                         <i class="fas fa-paper-plane icon"></i>
-                                        Send
+                                        Withdraw
                                     </button>
                                     <button class="btn btn-secondary" onclick="onWalleRecieve()">
-                                        <i class="fas fa-arrow-down icon"></i>
-                                        Receive
+                                        <i class="fas fa-qr-code icon"></i>
+                                        Qr Code
                                     </button>
                                 @endif
                             </div>
-                            <p class="mt-3">
+                            <!-- <p class="mt-3">
                                 <span id="wallet-address">{{ $gms_wallet }}</span>
                                 <i class="fas fa-copy copy-btn" onclick="copyAddress('wallet-address')"></i>
-                            </p>
-                            <p class="mt-3">
+                            </p> -->
+                            <!-- <p class="mt-3">
                                 <span id="wallet-history"><a
                                         href="https://bscscan.com/address/{{ $gms_wallet }}#tokentxns"
                                         style="font-size: 14px;">History</a></span>
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -767,7 +769,7 @@
                             <div class="" style="display: flex; justify-content: end;">
                                 <button type="button" data-bs-dismiss="modal" aria-label="Close"
                                     class="btn btn-outline-secondary">Cancel</button>
-                                <button style="margin-left: 10px;" type="submit" id="send_btn"
+                                <button style="margin-left: 10px; display: none;" type="submit" id="send_btn"
                                     class="btn btn-primary">SEND USDT</button>
                             </div>
                         </div>

@@ -67,53 +67,8 @@ if(count($plans) == 0){
                 --secondary-color: #3b3bf9
             }
         </style>
-@if(!isTest())
-<div class="tradingview-widget-container" style="position: relative; z-index: 2000;">
-    <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-    {
-    "symbols": [
-      {
-        "description": "BTC USDT",
-        "proName": "BINANCE:BTCUSDT"
-      },
-      {
-        "description": "ETH USDT",
-        "proName": "BINANCE:ETHUSDT"
-      },
-      {
-        "description": "SOLO USDT",
-        "proName": "POLONIEX:SOLOUSDT"
-      },
-      {
-        "description": "SHIB USDT",
-        "proName": "BINANCE:SHIBUSDT"
-      },
-      {
-        "description": "DOGE USDT",
-        "proName": "BINANCE:DOGEUSDT"
-      },
-      {
-        "description": "XRP USDT",
-        "proName": "BINANCE:XRPUSDT"
-      },
-      {
-        "description": "BNB USDT",
-        "proName": "BINANCE:BNBUSDT"
-      }
-    ],
-    "showSymbolLogo": true,
-    "isTransparent": false,
-    "height":100,
-    "displayMode": "regular",
-    "colorTheme": "dark",
-    "locale": "en"
-  }
-    </script>
-  </div>
-@endif
 
-      @include('dashboard.dcards.naver', ['r' => 'dashboard'])
+
       @include('dashboard.dcards.new')
       <!-- TradingView Widget BEGIN -->
 
@@ -124,7 +79,7 @@ if(count($plans) == 0){
                 @include('dashboard.dcards.menu', ['r' => 'dashboard'])
                 <!-- / Menu -->
                 <!-- Layout container -->
-                <div class="layout-page">
+                <div class="layout-page" style="padding-left: 0px !important;">
                     <!-- Navbar -->
                     @include('dashboard.dcards.nav')
                     <!-- / Navbar -->
@@ -209,7 +164,7 @@ if(count($plans) == 0){
                                            .col-lg-4 .card{
                                             border-left: 1px solid #3b3bf9;
                                             /* border: 0.1px solid #3b3bf9; */
-                                                background-color: #0c2820 !important;
+                                                background-color: #fff !important;
                                             }
                                             .fw-semibold{
                                                 /* text-transform: uppercase;
@@ -225,7 +180,7 @@ if(count($plans) == 0){
                                                 color: #3b3bf9 !important;
                                             }
                                             .card-title strong{
-                                                color: #fff !important;
+                                                color: #000 !important;
                                             }
                                             @media (max-width:900px) {
                                                 .image-carousel {
@@ -305,12 +260,17 @@ if(count($plans) == 0){
 }
 
                                         </style>
+
+
+
+@include('dashboard.dcards.wallet',['snd'=>true])
+
                                         <div style="margin-bottom: 15px;" class="col-lg-12 col-md-12 col-12 mb-12">
                                             
                                             <div style="display: flex; justify-content: space-between;">
 
                                                 <div class="gotos">
-                                                    @if(true)
+                                                    @if(false)
                                                     <a href="/pdf/gms3.pdf" download="_pdf_gms.pdf" class="btn btn-outline-danger shr-referral">
                                                         Download PDF
                                                     </a>
@@ -320,9 +280,10 @@ if(count($plans) == 0){
                                                 <div class="gotos" style="display: flex; justify-content: end;">
                                                 
 
-                                                <a id="downldapp_btn" href="https://play.google.com/store/apps/details?id=com.forv.globalmarketstars" target="_blank" class="btn btn-outline-danger shr-referral">
+                                                <!-- <a id="downldapp_btn" href="https://play.google.com/store/apps/details?id=com.forv.globalmarketstars" target="_blank" class="btn btn-outline-danger shr-referral">
                                                     Download App
-                                                </a>
+                                                </a> -->
+
                                                 <script>
 
                                                     var isandroid = true;
@@ -372,19 +333,19 @@ Share Referral
                                     <div class="gotos" style="display: flex; justify-content: end;">
 
 
-                                        <a id="downldapp_btn" href="/dashboard/lott" style="margin-right: 20px;" target="_blank" class="btn btn-outline-danger shr-referral">
+                                        <!-- <a id="downldapp_btn" href="/dashboard/lott" style="margin-right: 20px;" target="_blank" class="btn btn-outline-danger shr-referral">
                                             GMS Lott
-                                        </a>
+                                        </a> -->
 
                                         @if(isAdmin())
-                                        <a href="/admin" class="btn btn-outline-danger shr-referral">
+                                        <!-- <a href="/admin" class="btn btn-outline-danger shr-referral">
                                             Admin
-                                        </a>
+                                        </a> -->
                                         @endif
 
                                     </div>
 
-                                      <div class="carousel-container">
+                                      <div class="carousel-container" style="display: none;">
                                             <div class="image-carousel">
                                                 <!-- <img class="active" src="/bcks/androd1.jpeg" alt="Image 1"> -->
                                                 <!-- <img src="/bcks/ind152.jpg" alt="Image 1"> -->
@@ -450,10 +411,8 @@ Share Referral
                                     
                                     @include('dashboard.dcards.otpverify')
 
-                                    @include('dashboard.dcards.miner')
 
 
-                                    @include('dashboard.dcards.wallet',['snd'=>true])
                                           
 
                                         </div>
@@ -467,7 +426,7 @@ Share Referral
                                             }
 
                                             .card-body .card-title span{
-    color: #fff !important;
+    color: #000 !important;
     font-size: 14px !important;
      padding-left: 7px;
                                                 /* color: yellow !important; */
@@ -513,7 +472,7 @@ Share Referral
 }
                                         </style>
 
-<div style="display: flex; justify-content: center; margin-bottom: 40px;">
+<div style="display: none; justify-content: center; margin-bottom: 40px;">
     <div class="card" style="background-color: #0c2820 !important;">
         <div class="card-body">
             <div style="flex-direction: column;" class="card-title d-flex align-items-center justify-content-around">
@@ -598,7 +557,139 @@ Share Referral
         </div>
     </div>
 </div>
-                                        <div class="col-lg-4 col-md-4 col-6 mb-4">
+
+<div class="">
+    <style>
+     .lfcontainer{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+     .lfcontainer h4{
+         color: #000;
+         font-size: 12px;
+     }
+     .lfcontainer p{
+         color: #000;
+         font-size: 12px;
+     }
+     .deposit-btn{
+         /* background-color: #3b3bf9 !important; */
+         /* border-color: #3b3bf9 !important; */
+         /* background-image: linear-gradient(to right, #3b3bf9, #00D094); */
+         background-image: linear-gradient(to right, #3b3bf9, #3b3bf9);
+         border-color: transparent !important;
+         color: #fff;
+         width: 100%;
+     }
+     .deposit-btn:hover{
+         background-color: #3b3bf9 !important;
+         border-color: transparent !important;
+     }
+    </style>
+     <div class="col-md-12 col-lg-12 mb-3">
+         <div class="card">
+           <!-- <img class="card-img-top"
+             src="/bcks/silver.png"
+             alt="Card image cap" /> -->
+           <div class="card-body">
+             <h5 class="card-title">Trade</h5>
+             <div class="lfcontainer">
+                 <h4>Contract</h4>
+                 <p>LifeTime</p>
+             </div>
+             <!-- <div class="lfcontainer">
+                 <h4>Min Amount</h4>
+                 <p>Min 100 USDT or 10 USDT</p>
+             </div> -->
+             <div class="lfcontainer">
+                 <h4>Monthly Trade Profit</h4>
+                 <p>15%</p>
+             </div>
+             {{-- <p class="card-text">
+               Some quick example text to build on the card title and
+               make up the bulk of the card's content.
+             </p> --}}
+             <a href="#"
+               data-bs-toggle="modal"
+               data-bs-target="#modalCenter"
+               onclick="onModalSilver()"
+               class="btn btn-outline-primary deposit-btn">Trade Now</a>
+               <!-- <a class="btn btn-danger" style="width: 100%; margin-top: 10px;" href="/dashboard/demo/calculator">Calculate</a> -->
+           </div>
+         </div>
+       </div>
+       
+       <div class="col-md-6 col-lg-4 mb-3" style="display: none;">
+         <div class="card">
+           <!-- <img class="card-img-top"
+             src="/imgs/dsk/goldpckg.png"
+             alt="Card image cap" /> -->
+           <div class="card-body">
+             <h5 class="card-title">Gold</h5>
+             <div class="lfcontainer">
+                 <h4>Contract</h4>
+                 <p>15 Months</p>
+             </div>
+             <!-- <div class="lfcontainer">
+                 <h4>Min Amount</h4>
+                 <p>Min 100 USDT or 10 USDT</p>
+             </div> -->
+             <div class="lfcontainer">
+                 <h4>Compounding</h4>
+                 <p>6 Months</p>
+             </div>
+             {{-- <p class="card-text">
+               Some quick example text to build on the card title and
+               make up the bulk of the card's content.
+             </p> --}}
+             <a href="#"
+               onclick="onModalGold()"
+               class="btn btn-outline-primary deposit-btn">Trade Now</a>
+               <!-- <a class="btn btn-danger" style="width: 100%; margin-top: 10px" href="/dashboard/demo/calculator?amnt=100&typ=compound">Calculate</a> -->
+           </div>
+         </div>
+       </div>
+       <div class="col-md-6 col-lg-4 mb-4" style="display: none;">
+         <div class="card">
+           <!-- <img style="padding:45px;" class="card-img-top"
+             src="https://kadabook-development.s3.amazonaws.com/media/Place_Images/real-touch-beauty-centre/menu/4630165774.png"
+             alt="Card image cap" /> -->
+           <div class="card-body" style="display: flex; flex-direction: column; justify-content:space-between;">
+             <h5 class="card-title">Diamond</h5>
+             <div class="lfcontainer">
+                 <h4>Contract</h4>
+                 <p>15 Months</p>
+             </div>
+             <!-- <div class="lfcontainer">
+                 <h4>Min Amount</h4>
+                 <p>1000 USDT</p>
+             </div> -->
+             <div class="lfcontainer">
+                 <h4>Monthly Trade Profit</h4>
+                 <p>15%</p>
+             </div>
+             {{-- <p class="card-text">
+               Some quick example text to build on the card title and
+               make up the bulk of the card's content.
+             </p> --}}
+             <button href="#"
+             data-bs-toggle="modal"
+             data-bs-target="#modalCenter"
+             onclick="onModalDiamond()"
+               class="btn btn-outline-primary deposit-btn">Trade Now</button>
+               <!-- <a class="btn btn-danger" style="width: 100%; margin-top: 10px;" href="/dashboard/demo/calculator">Calculate</a> -->
+           </div>
+         </div>
+         </div>
+       </div>
+
+<style>
+    .cardbtns{
+        margin-top: 10px !important;
+    }
+</style>
+                                        <div class="col-lg-6 col-md-6 col-12 mb-6 cardbtns">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <div class="card-title d-flex align-items-center justify-content-between">
@@ -637,7 +728,7 @@ Share Referral
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-6 mb-4">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-6 cardbtns">
                                             <div class="card">
                                                 <div class="card-body">
                                                     
@@ -680,7 +771,7 @@ Share Referral
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-6 mb-4">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-6 cardbtns">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <div class="card-title d-flex align-items-center justify-content-between">
@@ -730,7 +821,7 @@ Share Referral
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-6 mb-4">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-6 cardbtns">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <div class="card-title d-flex align-items-center justify-content-between">
@@ -788,7 +879,7 @@ $twallet = DB::table('customer_transfers')
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-6 mb-4">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-6 cardbtns">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <div class="card-title d-flex align-items-center justify-content-between">
@@ -829,7 +920,7 @@ $twallet = DB::table('customer_transfers')
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-6 mb-4">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-6 cardbtns">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <div class="card-title d-flex align-items-center justify-content-between">
@@ -876,7 +967,7 @@ $twallet = DB::table('customer_transfers')
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-6 mb-4">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-6 cardbtns">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <div class="card-title d-flex align-items-center justify-content-between">
@@ -948,7 +1039,7 @@ $dtotalAmoun = getdTotalAmountForLevel($referralId);
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-6 mb-4">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-6 cardbtns">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <div class="card-title d-flex align-items-center justify-content-between">
@@ -1023,131 +1114,8 @@ $totalAmoun = getTotalAmountForLevel($referralId);
                                     </div>
                                 </div>
                             </div>
-                            <h5 class="pb-1 mb-4" style="color: #fff !important">GMS Packages</h5>
-                            <div class="row mb-5">
-                               <style>
-                                .lfcontainer{
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                }
-                                .lfcontainer h4{
-                                    color: #fff;
-                                    font-size: 12px;
-                                }
-                                .lfcontainer p{
-                                    color: #fff;
-                                    font-size: 12px;
-                                }
-                                .deposit-btn{
-                                    /* background-color: #3b3bf9 !important; */
-                                    /* border-color: #3b3bf9 !important; */
-                                    background-image: linear-gradient(to right, #3b3bf9, #00D094);
-                                    border-color: transparent !important;
-                                    color: #fff;
-                                    width: 100%;
-                                }
-                                .deposit-btn:hover{
-                                    background-color: #3b3bf9 !important;
-                                    border-color: transparent !important;
-                                }
-                               </style>
-                                <div class="col-md-6 col-lg-4 mb-3">
-                                    <div class="card h-100">
-                                      <img class="card-img-top"
-                                        src="/bcks/silver.png"
-                                        alt="Card image cap" />
-                                      <div class="card-body">
-                                        <h5 class="card-title">Silver</h5>
-                                        <div class="lfcontainer">
-                                            <h4>Contract</h4>
-                                            <p>15 Months</p>
-                                        </div>
-                                        <div class="lfcontainer">
-                                            <h4>Min Amount</h4>
-                                            <p>Min 100 USDT or 10 USDT</p>
-                                        </div>
-                                        <div class="lfcontainer">
-                                            <h4>Monthly Trade Profit</h4>
-                                            <p>15%</p>
-                                        </div>
-                                        {{-- <p class="card-text">
-                                          Some quick example text to build on the card title and
-                                          make up the bulk of the card's content.
-                                        </p> --}}
-                                        <a href="#"
-                                          data-bs-toggle="modal"
-                                          data-bs-target="#modalCenter"
-                                          onclick="onModalSilver()"
-                                          class="btn btn-outline-primary deposit-btn">Trade Now</a>
-                                          <a class="btn btn-danger" style="width: 100%; margin-top: 10px;" href="/dashboard/demo/calculator">Calculate</a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="col-md-6 col-lg-4 mb-3">
-                                    <div class="card h-100">
-                                      <img class="card-img-top"
-                                        src="/imgs/dsk/goldpckg.png"
-                                        alt="Card image cap" />
-                                      <div class="card-body">
-                                        <h5 class="card-title">Gold</h5>
-                                        <div class="lfcontainer">
-                                            <h4>Contract</h4>
-                                            <p>15 Months</p>
-                                        </div>
-                                        <div class="lfcontainer">
-                                            <h4>Min Amount</h4>
-                                            <p>Min 100 USDT or 10 USDT</p>
-                                        </div>
-                                        <div class="lfcontainer">
-                                            <h4>Compounding</h4>
-                                            <p>6 Months</p>
-                                        </div>
-                                        {{-- <p class="card-text">
-                                          Some quick example text to build on the card title and
-                                          make up the bulk of the card's content.
-                                        </p> --}}
-                                        <a href="#"
-                                          onclick="onModalGold()"
-                                          class="btn btn-outline-primary deposit-btn">Trade Now</a>
-                                          <a class="btn btn-danger" style="width: 100%; margin-top: 10px" href="/dashboard/demo/calculator?amnt=100&typ=compound">Calculate</a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6 col-lg-4 mb-3">
-                                    <div class="card h-100">
-                                      <img style="padding:45px;" class="card-img-top"
-                                        src="https://kadabook-development.s3.amazonaws.com/media/Place_Images/real-touch-beauty-centre/menu/4630165774.png"
-                                        alt="Card image cap" />
-                                      <div class="card-body" style="display: flex; flex-direction: column; justify-content:space-between;">
-                                        <h5 class="card-title">Diamond</h5>
-                                        <div class="lfcontainer">
-                                            <h4>Contract</h4>
-                                            <p>15 Months</p>
-                                        </div>
-                                        <div class="lfcontainer">
-                                            <h4>Min Amount</h4>
-                                            <p>1000 USDT</p>
-                                        </div>
-                                        <div class="lfcontainer">
-                                            <h4>Monthly Trade Profit</h4>
-                                            <p>15%</p>
-                                        </div>
-                                        {{-- <p class="card-text">
-                                          Some quick example text to build on the card title and
-                                          make up the bulk of the card's content.
-                                        </p> --}}
-                                        <button href="#"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#modalCenter"
-                                        onclick="onModalDiamond()"
-                                          class="btn btn-outline-primary deposit-btn">Trade Now</button>
-                                          <a class="btn btn-danger" style="width: 100%; margin-top: 10px;" href="/dashboard/demo/calculator">Calculate</a>
-                                      </div>
-                                    </div>
-                                    </div>
-                                  </div>
+                            <!-- <h5 class="pb-1 mb-4" style="color: #fff !important">GMS Packages</h5> -->
+                           
                                   <script>
                                     function onModalSilver() {
                                         var sil_amnt = document.getElementById('sil_amnt');
@@ -1158,7 +1126,7 @@ $totalAmoun = getTotalAmountForLevel($referralId);
                                         var seilver_title_text =  document.getElementById('seilver_title_text');
                                         var modal_header = document.getElementById('modal_header');
                                         modal_header.style.backgroundColor = '#969696';
-                                        seilver_title_text.innerText = 'Silver Package';
+                                        seilver_title_text.innerText = 'Trade Now';
                                         // seilver_title_text.style.color = clr == "#e2e2e2" ? "#000": "#fff";
                                         // '','','','#''','','',''
                                         selmodal.innerText = 'normal';
@@ -1581,10 +1549,10 @@ $totalAmoun = getTotalAmountForLevel($referralId);
                                                 <div
                                                     class="row justify-content-end">
                                                     <div class="" style="display: flex; justify-content: end;">
-                                                        <button type="button"
+                                                        <!-- <button type="button"
                                                         data-bs-dismiss="modal"
                                                         aria-label="Close"
-                                                            class="btn btn-outline-secondary">Cancel</button>
+                                                            class="btn btn-outline-secondary">Cancel</button> -->
                                                         <button style="margin-left: 10px;" type="submit"
                                                             class="btn btn-primary">Confirm</button>
                                                     </div>
@@ -1668,45 +1636,22 @@ $totalAmoun = getTotalAmountForLevel($referralId);
     /* padding-top: 3.825rem !important; */
 }
 .adjust-mn-margin {
-    margin-top: 80px !important;
+    margin-top: 0px !important;
 }
 @media (min-width:1200px) {
 .menu-index {
     background-color: black !important;
-    margin-top: 128px;
+    margin-top: 0px;
     /* margin-top: calc(130px - var(--scrollY)) !important; */
 }
 }
 @media (max-width:1200px) {
 .menu-index {
     background-color: black !important;
-    margin-top: 125px;
+    margin-top: 0px;
 }
 }
-/* @media (min-width:1200px) {
-.menu-index {
-    background-color: black !important;
-    margin-top: 130px !important;
-}
-}
-@media (max-width:1200px) {
-.menu-index {
-    background-color: black !important;
-    margin-top: 130px !important;
-}
-}
-@media (max-width:800px) {
-.menu-index {
-    background-color: black !important;
-    margin-top: 130px !important;
-}
-} */
-/* @media (max-width:550px) {
-.menu-index {
-    background-color: black !important;
-    margin-top: 130px !important;
-}
-} */
+
 </style>
 
 <script>

@@ -146,6 +146,7 @@ if (count($nplans) == 0) {
         }
     }
 </style>
+@if(false)
 <nav id="nvcbr" class="navbar">
     <div style="display: flex;  width: 100%; justify-content: space-around; align-items: center;">
 
@@ -343,6 +344,7 @@ if (count($nplans) == 0) {
         displayUAEDateTime();
     </script>
 </nav>
+@endif
 <style>
     .navbar {
         background-color: #1e1e1e;

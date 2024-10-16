@@ -1661,7 +1661,7 @@ $totalAmoun = getTotalAmountForLevel($referralId);
     /* padding-top: 3.825rem !important; */
 }
 .adjust-mn-margin {
-    margin-top: 80px !important;
+    margin-top: 0px !important;
 }
 @media (min-width:1200px) {
 .menu-index {
@@ -1673,33 +1673,10 @@ $totalAmoun = getTotalAmountForLevel($referralId);
 @media (max-width:1200px) {
 .menu-index {
     background-color: black !important;
-    margin-top: 125px;
+    margin-top: 0px;
 }
 }
-/* @media (min-width:1200px) {
-.menu-index {
-    background-color: black !important;
-    margin-top: 130px !important;
-}
-}
-@media (max-width:1200px) {
-.menu-index {
-    background-color: black !important;
-    margin-top: 130px !important;
-}
-}
-@media (max-width:800px) {
-.menu-index {
-    background-color: black !important;
-    margin-top: 130px !important;
-}
-} */
-/* @media (max-width:550px) {
-.menu-index {
-    background-color: black !important;
-    margin-top: 130px !important;
-}
-} */
+
 </style>
 
 <script>

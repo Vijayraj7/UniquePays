@@ -1,58 +1,68 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-<div class="left-container"></div>
-<div class="right-container">
-    <div class="right-container__box">
-        <div class="right-container-box">
-            <h2 class="right-container__h2">
-                <img src="/tst/grnyellow.png" style="height: 50px; margin-right: 10px;">
-                Login to UniquePay
-            </h2>
-            <p class="right-container__p">Enter your email and password to sign in</p>
-        </div>
-        <form action="/at/login" method="POST">
-            <div class="input-container">
-                <label for="email" class="right-container__label">Email</label>
-                <input
-                    type="text"
-                    class="right-container__input"
-                    name="email"
-                    value="{{old('email')}}"
-                    placeholder="Your email address"
-                >
-                @error("email")
-                <p style="color: white; margin-bottom:20px;">
-                    email
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+    </head>
+    <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <div class="left-container"></div>
+        <div class="right-container">
+            <div class="right-container__box">
+                <div class="right-container-box">
+                    <h2 class="right-container__h2">
+                        <img src="/tst/grnyellow.png" style="height: 50px; margin-right: 10px;">
+                        Login to UniquePay
+                    </h2>
+                    <p class="right-container__p">Enter your email and password to sign in</p>
+                </div>
+                <form action="/at/login" method="POST">
+                    <div class="input-container">
+                        <label for="email" class="right-container__label">Email</label>
+                        <input
+                            type="text"
+                            class="right-container__input"
+                            name="email"
+                            value="{{old('email')}}"
+                            placeholder="Your email address"
+                        >
+                        @error("email")
+                        <p style="color: white; margin-bottom:20px;">
+                            email
                     not found
-                </p>
-                @enderror
-                <label for="email" class="right-container__label">Password</label>
-                <input
-                    type="password"
-                    class="right-container__input"
-                    name="password"
-                    value="{{old('password')}}"
-                    placeholder="Your password"
-                >
-                @error("password")
-                <p style="color: white; margin-bottom:20px;">
-                    {{$message}}
-                </p>
-                @enderror
+                        </p>
+                        @enderror
+                        <label for="email" class="right-container__label">Password</label>
+                        <input
+                            type="password"
+                            class="right-container__input"
+                            name="password"
+                            value="{{old('password')}}"
+                            placeholder="Your password"
+                        >
+                        @error("password")
+                        <p style="color: white; margin-bottom:20px;">
+                            {{$message}}
+                        </p>
+                        @enderror
+                    </div>
+                    <div class="toggle-container">
+                        <input type="checkbox" class="toggle-box" name="checkbox">
+                        <label for="checkbox">Remember me</label>
+                    </div>
+                    <button type="submit" style="cursor: pointer;" class="btn">SIGN IN</button>
+                    <p class="right-container__bottom-text">
+                        Don't have an account?
+                        <strong>Sign Up</strong>
+                    </p>
+                </form>
             </div>
-            <div class="toggle-container">
-                <input type="checkbox" class="toggle-box" name="checkbox">
-                <label for="checkbox">Remember me</label>
-            </div>
-            <button type="submit" style="cursor: pointer;" class="btn">SIGN IN</button>
-            <p class="right-container__bottom-text">
-                Don't have an account?
-                <strong>Sign Up</strong>
-            </p>
-        </form>
-    </div>
-</div>
+        </div>
+    </body>
+</html>
 <style>
     * {
   padding: 0;
@@ -185,4 +195,11 @@ body {
   padding: 10px 0;
   color: #fff;
 }
+</style>
+<style>
+  @media (max-width:900px) { 
+    .left-container{
+     display: none !important;
+    }
+   }
 </style>

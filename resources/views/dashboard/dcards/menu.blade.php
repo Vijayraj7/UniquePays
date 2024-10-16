@@ -1,6 +1,6 @@
 <style>
        .layout-page{ 
-    background-color: #00150f !important;
+    background-color: #3e82ff !important;
 }
 .bg-menu-theme .menu-link, .bg-menu-theme .menu-horizontal-prev, .bg-menu-theme .menu-horizontal-next {
     color: #fff;
@@ -25,21 +25,22 @@
     }
 }
 </style>
-<aside style="background-color: black !important;" id="layout-menu" class="layout-menu menu-vertical menu menu-index nv-mnn bg-menu-theme">
-    <div style="display: flex; height: 0px; flex-direction: column; justify-content: center; align-items: center;" class="app-brand demo">
-        <!-- <a href="/" class="app-brand-link">
+@if(true)
+<aside style="left: 0; right: auto; background-color: blue !important; display: none;" id="layout-menu" class="layout-menu menu-vertical menu menu-index nv-mnn bg-menu-theme">
+    <div style="display: flex; height: 150px; flex-direction: column; justify-content: center; align-items: center;" class="app-brand demo">
+        <a href="/" class="app-brand-link">
             <img
                 style="padding: 10px;"
                 src="/tst/grnyellow.png"
                 alt
                 srcset
-                height="90px"
+                height="0px"
             >
         </a>
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
             <i class="bx bx-chevron-left bx-sm align-middle"></i>
-        </a> -->
-        <!-- <div style="height: 80px; width: 80px;" class="avatar avatar-online menu-avatar">
+        </a>
+        <div style="height: 80px; width: 80px;" class="avatar avatar-online menu-avatar">
             <img
                 style="height: 100%; width: 100%;"
                 src="{{ $v->img ?? '/assets/img/avatars/1.png' }}"
@@ -48,23 +49,23 @@
             >
         </div>
         <div style="margin-top: 8px !important;">
-            <a href="#">{{date('d, M, Y', strtotime($v->created_at))}}</a>
             <div style="font-size: 15px; color:#fff;" id="nm">{{$v->name}}</div>
         </div>
         <div style="margin-top: 8px !important;">
             <a href="#">{{date('d, M, Y', strtotime($v->created_at))}}</a>
             <div style="font-size: 11px;" id="time"></div>
-        </div> --></div>
+        </div>
+    </div>
     <div class="menu-inner-shadow"></div>
     <ul class="menu-inner py-1" style="padding-bottom: 12rem !important;">
         <!-- Dashboard -->
         <li class="menu-item @if($r == 'dashboard') active @endif">
             <a href="/dashboard" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
+                <div data-i18n="Analytics">Home</div>
             </a>
         </li>
-        <li class="menu-item @if($r == 'products') active @endif">
+        <!-- <li class="menu-item @if($r == 'products') active @endif">
             <a href="/dashboard/products/buy" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Buy Product</div>
@@ -81,24 +82,24 @@
                 <i class="menu-icon tf-icons bx bx-stats"></i>
                 <div data-i18n="Basic">Market Summary</div>
             </a>
-        </li>
-        <li class="menu-item @if($r == 'democalculator') active @endif">
+        </li> -->
+        <!-- <li class="menu-item @if($r == 'democalculator') active @endif">
             <a href="/dashboard/demo/calculator" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-calculator"></i>
                 <div data-i18n="Basic">Demo Calculator</div>
             </a>
-        </li>
+        </li> -->
         <!-- Components -->
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Account</span>
         </li>
         <!-- Cards -->
-        <li class="menu-item @if($r == 'profile') active @endif">
+        <!-- <li class="menu-item @if($r == 'profile') active @endif">
             <a href="/dashboard/profile" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-user-account"></i>
                 <div data-i18n="Basic">Profile</div>
             </a>
-        </li>
+        </li> -->
         <li class="menu-item @if($r == 'ref_tree') active @endif">
             <a href="/dashboard/reftree/{{$v->id}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-street-view"></i>
@@ -148,20 +149,26 @@
         </li>
         <!-- Misc -->
         <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">About</span>
+            <span class="menu-header-text">Logout</span>
         </li>
-        <li class="menu-item">
+        <!-- <li class="menu-item">
             <a href="/" target="_blank" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-support"></i>
                 <div data-i18n="Support">About</div>
             </a>
-        </li>
+        </li> -->
         <li class="menu-item">
+            <a href="/logout" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-signout"></i>
+                <div data-i18n="Support">Log out</div>
+            </a>
+        </li>
+        <!-- <li class="menu-item">
             <a href="/dashboard/customer/support" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-support"></i>
                 <div data-i18n="Support">Support</div>
             </a>
-        </li>
+        </li> -->
         <!-- <li class="menu-item">
             <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank"
                 class="menu-link">
@@ -171,3 +178,4 @@
         </li> -->
     </ul>
 </aside>
+@endif

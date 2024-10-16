@@ -43,7 +43,7 @@
         --secondary-color: #3b3bf9
     }
 </style>
-<footer class="content-footer footer bg-footer-theme">
+<footer style="display: none;" class="content-footer footer bg-footer-theme">
     <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
         <div class="mb-2 mb-md-0">
             <!-- GMS
@@ -107,27 +107,10 @@
         }
     }
 
-    /* else index */
-    /* @media (min-width:1200px) {
+
 .menu-index {
     background-color: black !important;
-    margin-top:80px !important;
-}
-}
-@media (max-width:800px) {
-  .container-p-y:not([class^=pt-]):not([class*=" pt-"]) {
-    padding-top: 4.525rem !important;
-}
-}
-@media (max-width:550px) {
-.menu-index {
-    background-color: black !important;
-    margin-top: 80px !important;
-}
-} */
-.menu-index {
-    background-color: black !important;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 .dropdown-menu{
     background-color: var(--secondary-color) !important;
